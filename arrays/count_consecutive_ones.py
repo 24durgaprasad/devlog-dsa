@@ -9,6 +9,7 @@ def findMaxConsecutiveOnes(nums):
         else:
             current_count = 0
             
+    max_count = max(max_count, current_count)        
     return max_count
 
 nums = list(map(int,input("enter binary array values :").split()))
